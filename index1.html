@@ -1,0 +1,443 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Event Organizer Website Design Tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+ 
+
+
+    <div class="bg-image"></div>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"><span>f</span>esta</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#range">range</a>
+        <a href="#hotel selection">hotel selection</a>
+        <a href="#guest details">guest details</a>
+        <a href="#payment">payment</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+<!-- range section starts  -->
+
+<section class="range" id="range">
+
+    <br>
+
+
+    <div class="content">
+
+        <h1 class="heading"><span>select</span> range </h1>
+         
+    </div>
+
+    <div class="slider">
+        <input type="range" min="20000" max="80000" value="1000" oninput="rangeValue.innerText = this.value">
+        <p id="rangeValue">20000</p>
+        </div>
+
+
+
+
+        
+
+</section>
+<!-- range section ends -->
+<!-- hotel selection section starts  -->
+
+<section class="contact" id="hotel selection"></section>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b8afaf;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 30px;
+  word-break: break-all;
+}
+
+p{
+  font-size: 10px;
+  word-break: break-all;
+  
+  color: rgb(44, 38, 38);
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  margin-top: 20%;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Hotel selection</h1>
+<hr>
+
+<h2></h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('capacity below 100')"> capacity below 100</button>
+  <button class="btn" onclick="filterSelection('capacity below 500')"> capacity below 500</button>
+  <button class="btn" onclick="filterSelection('capacity above 1000')"> capacity above 1000</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+
+
+
+
+<div class="row">
+  <div class="column capacity below 100">
+    <div class="content">
+      <img src="c1.jpg" alt="Mountains" style="width:100%">
+      <h4>pool </h4>
+      <p>wedding .</p>
+    </div>
+  </div>
+  <div class="column capacity below 100">
+    <div class="content">
+    <img src="c2.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>engagement..</p>
+    </div>
+  </div>
+  <div class="column capacity below 100">
+    <div class="content">
+    <img src="c3.jpg" alt="Nature" style="width:100%">
+      <h4>Forest pool</h4>
+      <p>bachelorate..</p>
+    </div>
+  </div>
+  
+  <div class="column capacity below 500">
+    <div class="content">
+      <img src="c4.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>destination meet up.</p>
+    </div>
+  </div>
+  <div class="column capacity below 500">
+    <div class="content">
+    <img src="c5.jpg" alt="Car" style="width:100%">
+      <h4>Family</h4>
+      <p>.family get together.</p>
+    </div>
+  </div>
+  <div class="column capacity below 500">
+    <div class="content">
+    <img src="c6.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>dinner party..</p>
+    </div>
+  </div>
+
+  <div class="column capacity above 1000">
+    <div class="content">
+      <img src="c7.jpg" alt="Car" style="width:100%">
+      <h4>pool</h4>
+      <p>birthday party..</p>
+    </div>
+  </div>
+  <div class="column capacity above 1000">
+    <div class="content">
+    <img src="c8.jpg" alt="Car" style="width:100%">
+      <h4>pool</h4>
+      <p>theam party..</p>
+    </div>
+  </div>
+  
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- hotel selection section ends  -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- contact section starts  -->
+
+
+<br>
+
+<section class="contact" id="guest details">
+
+    <h1 class="heading"> <span>Guest</span> Details </h1>
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="date" placeholder="Check In">
+            <input type="date" placeholder="Check Out">
+        </div>
+        <div class="inputBox">
+            <input type="tel" placeholder="Phone Number">
+            <input type="number" placeholder="Number of Guests">
+        </div>
+        <textarea name="" placeholder="Additional Requirements" id="" cols="30" rows="10"></textarea>
+        <a href="#payment">
+            <input type="button" value="Proceed" class="btn" />
+         </a>
+        
+
+
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- payment section starts -->
+
+ <section class="contact" id="payment"></section>
+<html>
+  <body>
+
+ <section class="component">
+  <div class="total">
+    <h3>TOTAL</h3>
+    <p>18700.. Rs</p>
+  </div>
+  <div class="credit-card">
+    <h2>Payment</h2>
+    <form>
+      <input type="text" placeholder="NAME" />
+      <div class="line"><input type="text" placeholder="CARD" /> <input type="text" placeholder="NUMBER" /> <input type="text" /> <input type="text" /></div>
+      <div class="line">
+        <input class="litle" type="text" placeholder="EXPIRY" />
+        <input class="tall" type="text" placeholder="CCV" />
+      </div>
+      <button type="submit" class="valid-button">PROCEED TO CHECKOUT</button>
+    </form>
+  </div>
+</section>
+
+
+
+  <!-- payment section ends -->
+
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("5.png");
+
+  /* Full height */
+  height: 80%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+  
+
+
+</body>
+</html>
